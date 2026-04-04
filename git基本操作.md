@@ -15,9 +15,13 @@ git分为工作区和暂存区和本地仓库，远程仓库
 - 本地仓库（repository）：通过git commit -m "消息内容"将暂存区的文件上传至本地仓库
 - 远程仓库（remote repository）：git push，将本地仓库的文件上传至远程仓库
 
-1. git remote add origin（仓库的别名，后面使用更加方便） <url>
-2. git pull origin main --allow-unrelated-histories 先拉取远程代码解决冲突（因为远程代码有本地没有的东西）
-3. git push -u origin main
-4. 现在使用SSH密钥进行操作，git remote set-url git@github.com:pencil-png/first-repo.git
-5. 怎么没反应
-6. 原来是ssh拒绝连接22端口，导致无法同步到远程，现在将ssh修改为http
+1.  git remote add origin（仓库的别名，后面使用更加方便） <url>
+2.  git pull origin main --allow-unrelated-histories 先拉取远程代码解决冲突（因为远程代码有本地没有的东西）
+3.  git push -u origin main
+4.  现在使用SSH密钥进行操作，git remote set-url git@github.com:pencil-png/first-repo.git
+5.  怎么没反应
+6.  原来是ssh拒绝连接22端口，导致无法同步到远程，现在将ssh修改为http
+7.  学习使用vscode集成git，在源代码管理部分
+8.  如何在项目中添加git
+    - 把远程项目的git相关文件copy过来
+    - 在项目里面通过git bash中初始化
