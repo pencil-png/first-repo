@@ -19,3 +19,5 @@ git分为工作区和暂存区和本地仓库，远程仓库
 2. git pull origin main --allow-unrelated-histories 先拉取远程代码解决冲突（因为远程代码有本地没有的东西）
 3. git push -u origin main
 4. 现在使用SSH密钥进行操作，git remote set-url git@github.com:pencil-png/first-repo.git
+5. 怎么没反应
+6. 原来是ssh拒绝连接22端口，导致无法同步到远程，现在将ssh修改为http
