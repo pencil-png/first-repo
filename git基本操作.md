@@ -1,12 +1,12 @@
-# git的基本概念
+# git
 
-### git初始化指令
+## git初始化指令
 
 git init，在文件中会生成.git文件（隐藏式文件）<br>
 
 ---
 
-### git的基本操作
+## git的基本操作
 
 git分为工作区和暂存区和本地仓库，远程仓库
 
@@ -32,9 +32,34 @@ git分为工作区和暂存区和本地仓库，远程仓库
     - 把远程项目的git相关文件copy过来
     - 在项目里面通过git bash中初始化
 
-## git的分支
+## git的分支(多人协同开发必备)
 
-## 关于git中不需要提交的文件，怎么处理
+### 分支的概念
+
+- 主分支（master/main）
+- 开发用（dev）
+- 不同版本的分支等
+
+### 关于分支的命令
+
+1. 列出所有本地分支
+   > git branch
+2. 列出所有远程分支
+   > git branch -r
+3. 新建一个分支，但是仍然保留在当前分支
+   > git branch dev
+4. 新建一个分支，并切换到该分支
+   > git checkout -b test
+5. 切换分支
+   > git checkout dev
+6. 合并指定分支到当前分支
+   > git merge test
+7. 删除分支
+   > git branch -d test
+
+---
+
+## .gitignore(关于git中不需要提交的文件，怎么处理)
 
 在.gitignore文件中写不需要的文件，格式如下：
 
